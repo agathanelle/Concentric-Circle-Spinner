@@ -7,31 +7,54 @@
 body {
 	min-height: 100vh;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	overflow: hidden;
+	background-color: rgba(0, 45, 75, 0.918);
 }
 
-.petals {
+.rose-petals {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 5px;
-	border: 10px solid transparent;
-	border-color: #e98080 #ebbcbc;
+	margin: 1px;
+	border: 8px solid transparent;
+	border-color: #e98080e5 #ebbcbc;
 	border-radius: 25%;
 	animation: thing 10s cubic-bezier(0.27, 1.63, 1, 1) infinite;
 }
 
-.petals2 {
+.rose-petals2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 5px;
-	border: 10px solid transparent;
-	border-color: #ebbcbc #e98080;
+	margin: 1px;
+	border: 8px solid transparent;
+	border-color: #ebbcbce1 #e98080;
 	border-radius: 25%;
 	animation: thing 10s cubic-bezier(0.27, 1.63, 1, 1) infinite;
+}
+
+.daisy-petals {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1px;
+	border: 8px solid transparent;
+	border-color: rgba(235, 235, 229, 0.85) rgba(235, 235, 229, 1) rgba(235, 235, 229, 0.9) rgba(235, 235, 229, 1.2);
+	border-radius: 28%;
+	animation: thing 10s cubic-bezier(0.27, 1.63, 1, 1) infinite;
+}
+
+.daisy-middle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px;
+	border: 8px solid transparent;
+	border-color: rgba(255, 238, 3, 1) rgba(255, 238, 3, 0.95) rgba(255, 238, 3, 1.2) rgba(255, 238, 3, 0.9);
+	border-radius: 70%;
+	animation: thing 5s cubic-bezier(0.35, -0.14, 0.79, 1.22) infinite;
 }
 
 @keyframes thing {
